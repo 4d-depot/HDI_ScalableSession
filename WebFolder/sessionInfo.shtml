@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+	<body bgcolor="#ffffff">
+	<center><h3> Hello <!--#4DEVAL Choose(Session.userName # ""; Session.userName; "... nobody")--></h3></center> 
+	   <br/>
+	   <br/>
+	  Your session will expire on : <!--#4DTEXT Session.expirationDate -->
+	   <br/>
+	</body>
+</html>
+	  

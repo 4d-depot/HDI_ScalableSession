@@ -1,0 +1,820 @@
+﻿{
+	"destination": "detailScreen",
+	"windowMinWidth": 800,
+	"windowMaxWidth": 32000,
+	"windowMinHeight": 540,
+	"windowMaxHeight": 32000,
+	"width": 1000,
+	"height": 950,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 960,
+					"height": 910,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"TraceCheckbox": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 900,
+					"left": 30,
+					"width": 80,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "btnTrace",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information": {
+					"type": "input",
+					"top": 160,
+					"left": 100,
+					"width": 800,
+					"height": 420,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_Descriptions{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 695,
+					"left": 247,
+					"width": 406,
+					"height": 200,
+					"picture": "Images/Static Picture3.tif",
+					"pictureFormat": "scaled"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Static Picture3": {
+					"type": "picture",
+					"top": 326,
+					"left": 70,
+					"width": 856,
+					"height": 414,
+					"picture": "Images/Static Picture1.tif",
+					"pictureFormat": "scaled"
+				},
+				"information10": {
+					"type": "input",
+					"top": 120,
+					"left": 100,
+					"width": 800,
+					"height": 150,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_Descriptions{2}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"information7": {
+					"type": "input",
+					"top": 70,
+					"left": 50,
+					"width": 900,
+					"height": 300,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_Descriptions{3}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Web Area1": {
+					"type": "webArea",
+					"left": 80,
+					"top": 515,
+					"width": 400,
+					"height": 200,
+					"urlSource": "WA_URL9",
+					"webEngine": "system",
+					"borderStyle": "none"
+				},
+				"Button1": {
+					"type": "button",
+					"text": "Run",
+					"top": 440,
+					"left": 490,
+					"width": 90,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button1.4dm",
+					"focusable": false
+				},
+				"URLInfo1": {
+					"type": "input",
+					"left": 80,
+					"top": 440,
+					"width": 400,
+					"height": 20,
+					"dataSource": "Form:C1466.salesPerson3"
+				},
+				"Button9": {
+					"type": "button",
+					"text": "View authenticate method",
+					"top": 440,
+					"left": 610,
+					"width": 250,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button9.4dm",
+					"focusable": false,
+					"fontFamily": "Courier",
+					"fontSize": 13
+				}
+			}
+		},
+		{
+			"objects": {
+				"information5": {
+					"type": "input",
+					"top": 70,
+					"left": 50,
+					"width": 900,
+					"height": 340,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_Descriptions{4}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"WebAreaUser1": {
+					"type": "webArea",
+					"left": 40,
+					"top": 560,
+					"width": 450,
+					"height": 190,
+					"urlSource": "WA_URL1",
+					"webEngine": "system",
+					"borderStyle": "none"
+				},
+				"Button4": {
+					"type": "button",
+					"text": "Run (1)",
+					"top": 530,
+					"left": 400,
+					"width": 90,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button4.4dm",
+					"focusable": false
+				},
+				"URLInfo6": {
+					"type": "input",
+					"left": 40,
+					"top": 530,
+					"width": 350,
+					"height": 20,
+					"dataSource": "Form:C1466.salesPerson1",
+					"enterable": false,
+					"focusable": false
+				},
+				"Button10": {
+					"type": "button",
+					"text": "View authenticate method",
+					"top": 890,
+					"left": 134,
+					"width": 250,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button10.4dm",
+					"focusable": false,
+					"fontFamily": "Courier",
+					"fontSize": 13
+				},
+				"information6": {
+					"type": "input",
+					"top": 480,
+					"left": 180,
+					"width": 200,
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_TabLineCode{3}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"textAlign": "center"
+				},
+				"information8": {
+					"type": "input",
+					"top": 2122,
+					"left": 26,
+					"width": 200,
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_TabLineCode{3}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"information9": {
+					"type": "input",
+					"top": 480,
+					"left": 640,
+					"width": 200,
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_TabLineCode{4}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"textAlign": "center"
+				},
+				"Button11": {
+					"type": "button",
+					"text": "Total purchases",
+					"top": 780,
+					"left": 360,
+					"width": 130,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button11.4dm",
+					"focusable": false
+				},
+				"URLInfo7": {
+					"type": "input",
+					"left": 40,
+					"top": 780,
+					"width": 310,
+					"height": 20,
+					"dataSource": "Form:C1466.total",
+					"enterable": false,
+					"focusable": false
+				},
+				"WebAreaUser5": {
+					"type": "webArea",
+					"left": 40,
+					"top": 810,
+					"width": 450,
+					"height": 50,
+					"urlSource": "WA_URL3",
+					"webEngine": "system",
+					"borderStyle": "none"
+				},
+				"Button12": {
+					"type": "button",
+					"text": "Total purchases",
+					"top": 780,
+					"left": 837,
+					"width": 130,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button12.4dm",
+					"focusable": false
+				},
+				"URLInfo9": {
+					"type": "input",
+					"left": 520,
+					"top": 780,
+					"width": 310,
+					"height": 20,
+					"dataSource": "Form:C1466.total",
+					"enterable": false,
+					"focusable": false
+				},
+				"WebAreaUser6": {
+					"type": "webArea",
+					"left": 520,
+					"top": 810,
+					"width": 450,
+					"height": 50,
+					"urlSource": "WA_URL4",
+					"webEngine": "embedded",
+					"borderStyle": "none"
+				},
+				"Button13": {
+					"type": "button",
+					"text": "View totalPurchase method",
+					"top": 890,
+					"left": 647,
+					"width": 250,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button13.4dm",
+					"focusable": false,
+					"fontFamily": "Courier",
+					"fontSize": 13
+				},
+				"Line": {
+					"type": "line",
+					"top": 410,
+					"left": 510,
+					"width": 1,
+					"height": 460,
+					"strokeDashArray": [
+						2,
+						6
+					],
+					"startPoint": "bottomLeft",
+					"strokeWidth": 2
+				},
+				"Text": {
+					"type": "text",
+					"text": "Salesperson #1",
+					"top": 450,
+					"left": 180,
+					"width": 200,
+					"height": 20,
+					"fontSize": 18,
+					"stroke": "#696969",
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Salesperson #2",
+					"top": 450,
+					"left": 640,
+					"width": 200,
+					"height": 20,
+					"fontSize": 18,
+					"stroke": "#696969",
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"WebAreaUser10": {
+					"type": "webArea",
+					"left": 520,
+					"top": 560,
+					"width": 450,
+					"height": 190,
+					"urlSource": "WA_URL2",
+					"webEngine": "embedded",
+					"borderStyle": "none"
+				},
+				"Button14": {
+					"type": "button",
+					"text": "Run (2)",
+					"top": 530,
+					"left": 879,
+					"width": 90,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button14.4dm",
+					"focusable": false
+				},
+				"URLInfo10": {
+					"type": "input",
+					"left": 520,
+					"top": 530,
+					"width": 350,
+					"height": 20,
+					"dataSource": "Form:C1466.salesPerson2",
+					"enterable": false,
+					"focusable": false
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 810,
+					"left": 520,
+					"width": 450,
+					"height": 50,
+					"fill": "#FFFFFF",
+					"stroke": "transparent"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 560,
+					"left": 520,
+					"width": 450,
+					"height": 190,
+					"fill": "#FFFFFF",
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information1": {
+					"type": "input",
+					"top": 70,
+					"left": 50,
+					"width": 900,
+					"height": 250,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_Descriptions{5}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"WebAreaUser2": {
+					"type": "webArea",
+					"left": 40,
+					"top": 620,
+					"width": 450,
+					"height": 190,
+					"urlSource": "WA_URL5",
+					"webEngine": "system",
+					"borderStyle": "none"
+				},
+				"URLInfo3": {
+					"type": "input",
+					"left": 40,
+					"top": 820,
+					"width": 280,
+					"height": 20,
+					"dataSource": "Form:C1466.amIGood",
+					"enterable": false,
+					"focusable": false
+				},
+				"URLInfo4": {
+					"type": "input",
+					"left": 310,
+					"top": 330,
+					"width": 350,
+					"height": 20,
+					"dataSource": "Form:C1466.top3"
+				},
+				"WebAreaStorage": {
+					"type": "webArea",
+					"left": 310,
+					"top": 360,
+					"width": 390,
+					"height": 190,
+					"urlSource": "WA_URL_top3",
+					"webEngine": "system",
+					"borderStyle": "none"
+				},
+				"WebAreaUser3": {
+					"type": "webArea",
+					"left": 520,
+					"top": 620,
+					"width": 450,
+					"height": 190,
+					"urlSource": "WA_URL6",
+					"webEngine": "embedded",
+					"borderStyle": "none"
+				},
+				"URLInfo5": {
+					"type": "input",
+					"left": 520,
+					"top": 820,
+					"width": 280,
+					"height": 20,
+					"dataSource": "Form:C1466.amIGood",
+					"enterable": false,
+					"focusable": false
+				},
+				"Button6": {
+					"type": "button",
+					"text": "View 4D code",
+					"top": 330,
+					"left": 790,
+					"width": 180,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button6.4dm",
+					"focusable": false,
+					"fontFamily": "Courier",
+					"fontSize": 13
+				},
+				"Button7": {
+					"type": "button",
+					"text": "Run",
+					"top": 330,
+					"left": 680,
+					"width": 90,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button7.4dm",
+					"focusable": false
+				},
+				"information3": {
+					"type": "input",
+					"top": 1603,
+					"left": 26,
+					"width": 200,
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_TabLineCode{3}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"text": "Am I good?",
+					"top": 820,
+					"left": 340,
+					"width": 120,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button3.4dm",
+					"focusable": false
+				},
+				"Button5": {
+					"type": "button",
+					"text": "Am I good?",
+					"top": 820,
+					"left": 820,
+					"width": 120,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button5.4dm",
+					"focusable": false
+				},
+				"WebAreaUser7": {
+					"type": "webArea",
+					"left": 40,
+					"top": 850,
+					"width": 160,
+					"height": 30,
+					"urlSource": "WA_URL7",
+					"webEngine": "system",
+					"borderStyle": "solid"
+				},
+				"WebAreaUser8": {
+					"type": "webArea",
+					"left": 40,
+					"top": 1090,
+					"width": 160,
+					"height": 57,
+					"urlSource": "WA_URL7",
+					"webEngine": "system",
+					"borderStyle": "solid"
+				},
+				"WebAreaUser9": {
+					"type": "webArea",
+					"left": 520,
+					"top": 850,
+					"width": 160,
+					"height": 30,
+					"urlSource": "WA_URL8",
+					"webEngine": "embedded",
+					"borderStyle": "solid"
+				},
+				"Button8": {
+					"type": "button",
+					"text": "View amIGood method",
+					"top": 900,
+					"left": 400,
+					"width": 250,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button8.4dm",
+					"focusable": false,
+					"fontFamily": "Courier",
+					"fontSize": 13
+				},
+				"information2": {
+					"type": "input",
+					"top": 590,
+					"left": 180,
+					"width": 200,
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_TabLineCode{3}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"textAlign": "center"
+				},
+				"information4": {
+					"type": "input",
+					"top": 590,
+					"left": 640,
+					"width": 200,
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_TabLineCode{4}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"textAlign": "center"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Salesperson #1",
+					"top": 560,
+					"left": 180,
+					"width": 200,
+					"height": 20,
+					"fontSize": 18,
+					"stroke": "#696969",
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"Text3": {
+					"type": "text",
+					"text": "Salesperson #2",
+					"top": 560,
+					"left": 640,
+					"width": 200,
+					"height": 20,
+					"fontSize": 18,
+					"stroke": "#696969",
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 620,
+					"left": 520,
+					"width": 450,
+					"height": 190,
+					"fill": "#FFFFFF",
+					"stroke": "transparent"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 570,
+					"left": 510,
+					"width": 1,
+					"height": 320,
+					"strokeDashArray": [
+						2,
+						6
+					],
+					"startPoint": "topLeft",
+					"strokeWidth": 2
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 850,
+					"left": 520,
+					"width": 160,
+					"height": 30,
+					"fill": "#FFFFFF",
+					"stroke": "transparent"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 3551,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

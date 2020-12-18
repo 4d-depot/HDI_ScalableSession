@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font: Roboto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 4px;
+}
+
+tr:nth-child(even) {
+  background-color: #cce6ff;
+}
+</style>
+</head>
+
+	<body bgcolor="#ffffff">
+       <center><h3>Your top 3 customers</h3></center>
+	<table class="table">	
+		  <!--#4DCODE
+		  $i:=0
+		  $myTop3:=Session.storage.myTop3
+		  -->		  
+		  
+		<tr><th>Name</th><th>Total purchase</th></tr>
+	    
+    	  <!--#4DLOOP ($i<$myTop3.length)-->
+		<tr>
+			<td ><!--#4DTEXT $myTop3[$i].name--></td>
+			<td ><center><!--#4DTEXT String($myTop3[$i].totalPurchase;"$###,##0")--></center></td>
+		</tr>
+		  <!--#4DEVAL $i:=$i+1-->
+		  <!--#4DENDLOOP-->
+	</table>
+	</body>  
+</html>
+	  

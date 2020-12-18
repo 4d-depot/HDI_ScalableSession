@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="HDI_ScalableSession" uuid="2D4F6103DC084198BFC0283C03D0A0B2" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="INFO" uuid="107A367EBCC346259FD971E8FC1097DA" id="1">
+		<field name="ID" uuid="C6DBB917EEE44AF9BDA57ABA22C55C6B" type="4" unique="true" autosequence="true" not_null="true" id="1">
+			<field_extra position="1"/>
+		</field>
+		<field name="Description" uuid="C9EFE648E9234AADA33FB25D61C0190B" type="10" never_null="true" id="2">
+			<field_extra position="4"/>
+		</field>
+		<field name="TabTitle" uuid="58AF214936C941439CB263026A5B46ED" type="10" limiting_length="255" never_null="true" id="3">
+			<field_extra position="3"/>
+		</field>
+		<field name="PageNumber" uuid="A2D86BBFD5134D06999CBDD14FD07A27" type="4" never_null="true" id="4">
+			<field_extra position="2"/>
+		</field>
+		<primary_key field_name="ID" field_uuid="C6DBB917EEE44AF9BDA57ABA22C55C6B"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info fields_ordering="2" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="0" top="30.45703125" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(Students)" uuid="0510211481374795A8CCCF5417317522" id="2" hide_in_REST="true">
+		<field name="ID" uuid="A3F4B409F70043C3ACBA72FD87F35929" type="4" unique="true" autosequence="true" not_null="true" id="1">
+			<field_extra position="1"/>
+		</field>
+		<field name="firstname" uuid="F8895D10710E409A97FAE478BA626CBF" type="10" limiting_length="255" never_null="true" id="2">
+			<field_extra position="2"/>
+		</field>
+		<field name="lastname" uuid="9D742EDB318A4D82AEB75E786DE92605" type="10" limiting_length="255" never_null="true" id="3">
+			<field_extra position="3"/>
+		</field>
+		<field name="studentId" uuid="CE86923E6BCE4CF5A73353894C10D30B" type="3" never_null="true" id="4">
+			<field_extra position="5"/>
+		</field>
+		<field name="schoolID" uuid="57A0E05521A54133A9C8874E9055E019" type="4" never_null="true" id="5"/>
+		<field name="birthDate" uuid="B01168D32B634C799FC9721D6C88A0F4" type="8" never_null="true" id="6">
+			<field_extra position="4"/>
+		</field>
+		<primary_key field_name="ID" field_uuid="A3F4B409F70043C3ACBA72FD87F35929"/>
+		<table_extra trashed="true">
+			<editor_table_info displayable_fields_count="8">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="199.5234375" top="18.03125" width="164.91015625" height="224.765625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(Schools)" uuid="985EE9CC3AA940FEAD691146047612C8" id="3" hide_in_REST="true">
+		<field name="ID" uuid="D7421523882446C08F2019ED4E890DF0" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="0632C488F1EC4BE59044A068667E5326" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="minAcceptedEnglishLevel" uuid="3204A27B430D4729AA19DCC6DAA8FDB1" type="3" never_null="true" id="3"/>
+		<field name="cityID" uuid="A0EBCD0939C941C8B08BF9DF19EE664C" type="4" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="D7421523882446C08F2019ED4E890DF0"/>
+		<table_extra trashed="true">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="327.54296875" top="105.05859375" width="192.91796875" height="184.96484375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(Cities)" uuid="95036D180771436F84AA4ED3B78C7150" id="4" hide_in_REST="true">
+		<field name="ID" uuid="54D039D91B79419B9A97CC89519BECF9" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="7B34D92C859147B6AD69B2584E75809E" type="10" limiting_length="255" never_null="true" id="2"/>
+		<primary_key field_name="ID" field_uuid="54D039D91B79419B9A97CC89519BECF9"/>
+		<table_extra trashed="true">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="597.05078125" top="168.01953125" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(Schools_1)" uuid="E2901B4C70D443EB8DDCE5D49C353742" id="5" hide_in_REST="true">
+		<field name="ID" uuid="F03BCD2640C64864B334705E28B27577" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<primary_key field_name="ID" field_uuid="F03BCD2640C64864B334705E28B27577"/>
+		<table_extra trashed="true">
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="463.37109375" top="19.99609375" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Customers" uuid="BCD3553377E74071861F35FDF4A67CE5" id="6">
+		<field name="ID" uuid="CF218421AF434544A4ECC1921EB3AC39" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="EDA8C8ECCD484F8DBB89FBDB4AA90ED4" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="totalPurchase" uuid="615FE0F3811E40849C8561F183F3F10B" type="6" never_null="true" id="3"/>
+		<field name="salesID" uuid="E1F064E3BB034A86B93465AF86408CDD" type="4" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="CF218421AF434544A4ECC1921EB3AC39"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="188.51953125" top="33.40625" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="SalesPersons" uuid="1DA8214E6B97449B99F8EDD575F1D4D0" id="7">
+		<field name="ID" uuid="6C8118A707BE473A83D0B5D6585F25A1" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="firstname" uuid="3B8A43B8E52545A2AF0AD6C69C6D3C49" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="lastname" uuid="CCA9820DD5084ECABD8ADE5FDA678328" type="10" limiting_length="255" never_null="true" id="3">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="userId" uuid="F45F6C4AB9D6426CA5B52782EA2A02FB" type="4" never_null="true" id="4">
+			<field_extra multi_line="false">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<primary_key field_name="ID" field_uuid="6C8118A707BE473A83D0B5D6585F25A1"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="444.24609375" top="33.3984375" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="B574C6033D8A474EBEC0530D78AA6363" name_Nto1="sales" name_1toN="customers" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="E1F064E3BB034A86B93465AF86408CDD" name="salesID">
+				<table_ref uuid="BCD3553377E74071861F35FDF4A67CE5" name="Customers"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="6C8118A707BE473A83D0B5D6585F25A1" name="ID">
+				<table_ref uuid="1DA8214E6B97449B99F8EDD575F1D4D0" name="SalesPersons"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index kind="regular" unique_keys="true" uuid="11E716D51C0C4080B242CF30A4E5EF07" type="7">
+		<field_ref uuid="54D039D91B79419B9A97CC89519BECF9" name="ID">
+			<table_ref uuid="95036D180771436F84AA4ED3B78C7150" name="(Cities)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="4DD10DDA2E454D50853E77CD7787A183" type="7">
+		<field_ref uuid="F03BCD2640C64864B334705E28B27577" name="ID">
+			<table_ref uuid="E2901B4C70D443EB8DDCE5D49C353742" name="(Schools_1)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="5E30B8E9ABC74AAE99DA4C80B1195251" type="7">
+		<field_ref uuid="A3F4B409F70043C3ACBA72FD87F35929" name="ID">
+			<table_ref uuid="0510211481374795A8CCCF5417317522" name="(Students)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="5FBF16F75CD74812A20DF68C7DDAFC45" type="7">
+		<field_ref uuid="CF218421AF434544A4ECC1921EB3AC39" name="ID">
+			<table_ref uuid="BCD3553377E74071861F35FDF4A67CE5" name="Customers"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="AD02508B089D4247B1360B4C07232F00" type="7">
+		<field_ref uuid="6C8118A707BE473A83D0B5D6585F25A1" name="ID">
+			<table_ref uuid="1DA8214E6B97449B99F8EDD575F1D4D0" name="SalesPersons"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B17E3BF54450493DB72FBD48A5745784" type="7">
+		<field_ref uuid="C6DBB917EEE44AF9BDA57ABA22C55C6B" name="ID">
+			<table_ref uuid="107A367EBCC346259FD971E8FC1097DA" name="INFO"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B341A12EE474461EAFECFCD7FD7EE6FF" type="7">
+		<field_ref uuid="D7421523882446C08F2019ED4E890DF0" name="ID">
+			<table_ref uuid="985EE9CC3AA940FEAD691146047612C8" name="(Schools)"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0" package_name="HDI_Template_v18" structure_file_name="HowDoI" data_file_path=":HowDoI.4DD">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

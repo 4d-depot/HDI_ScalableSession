@@ -1,0 +1,128 @@
+﻿{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 800,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [
+		"onLoad",
+		"onCloseBox",
+		"onUnload"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {
+				"sizeMax": {
+					"type": "rectangle",
+					"top": 40,
+					"left": 20,
+					"width": 660,
+					"height": 900,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "transparent",
+					"strokeWidth": 0,
+					"stroke": "transparent"
+				},
+				"sizeMin": {
+					"type": "rectangle",
+					"top": 40,
+					"left": 20,
+					"width": 660,
+					"height": 520,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "transparent",
+					"strokeWidth": 1,
+					"stroke": "transparent",
+					"strokeDashArray": [
+						2,
+						6
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"ClassContent": {
+					"type": "input",
+					"left": 20,
+					"top": 40,
+					"width": 660,
+					"height": 520,
+					"enterable": false,
+					"hideFocusRing": false,
+					"fill": "transparent",
+					"dataSource": "Form:C1466.content",
+					"styledText": true,
+					"sizingY": "grow",
+					"sizingX": "grow",
+					"borderStyle": "none"
+				},
+				"HTMLContent": {
+					"type": "input",
+					"left": 20,
+					"top": 609,
+					"width": 660,
+					"height": 320,
+					"enterable": false,
+					"hideFocusRing": false,
+					"fill": "transparent",
+					"dataSource": "Form:C1466.html",
+					"styledText": true,
+					"sizingY": "move",
+					"sizingX": "grow",
+					"visibility": "hidden",
+					"borderStyle": "none"
+				},
+				"HTMLTitle": {
+					"type": "input",
+					"left": 20,
+					"top": 580,
+					"width": 300,
+					"height": 20,
+					"enterable": false,
+					"fill": "transparent",
+					"focusable": false,
+					"dataSource": "Form:C1466.htmlTitle",
+					"fontWeight": "bold",
+					"fontStyle": "normal",
+					"borderStyle": "none",
+					"stroke": "#0000cd",
+					"textAlign": "left",
+					"sizingY": "move",
+					"sizingX": "fixed",
+					"visibility": "hidden"
+				},
+				"HTMLSeparator": {
+					"type": "line",
+					"top": 570,
+					"left": 20,
+					"width": 580,
+					"height": 0,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"startPoint": "topLeft"
+				}
+			}
+		}
+	],
+	"geometryStamp": 591,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"width": 680,
+	"height": 940
+}
