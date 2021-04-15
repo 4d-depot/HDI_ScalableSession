@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="15">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="16">
 	<com.4d>
 		<deployment>
 			<options/>
@@ -21,7 +21,7 @@
 		</database>
 		<web>
 			<standalone_server>
-				<configuration automatic_session_management="false" port_number="8044" publish_at_startup="true"/>
+				<configuration automatic_session_management="false" port_number="8044" publish_at_startup="true" session_mode="1"/>
 				<rest launch_at_startup="true"/>
 				<options>
 					<cache cache_max_size="524288"/>
