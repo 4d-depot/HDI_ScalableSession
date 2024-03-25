@@ -2,7 +2,7 @@
 
 Get started with scalable web sessions (4D v18 R6) 
 
-Find more information on the [blog post](https://blog.4d.com/orda-improve-your-api-with-function-scope/).
+Find more information on the [blog post](https://blog.4d.com/scalable-sessions-for-advanced-web-applications/).
 
 ## Installing and Using a 4D Project
 
